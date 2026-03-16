@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { Roboto } from "next/font/google";
 
@@ -103,16 +103,6 @@ export const metadata: Metadata = {
 
   // PWA налаштування
   manifest: "/manifest.json",
-  themeColor: "#2563eb",
-  colorScheme: "light dark",
-
-  // Viewport налаштування
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
 
   // Apple Web App налаштування
   appleWebApp: {
@@ -132,6 +122,15 @@ export const metadata: Metadata = {
     "dc.language": "uk-UA",
     "dc.title": "Марафон «Хакни пошук роботи в IT за 14 днів»",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2563eb",
+  colorScheme: "light dark",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
 };
 
 export default function RootLayout({
