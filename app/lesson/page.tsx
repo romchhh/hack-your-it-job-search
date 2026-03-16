@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { HiOutlineCursorClick } from "react-icons/hi";
 
+
 export default function LessonPage() {
   return (
     <section className="max-w-5xl mx-auto px-4 py-16">
