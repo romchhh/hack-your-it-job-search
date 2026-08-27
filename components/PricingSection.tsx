@@ -14,8 +14,8 @@ const PricingSection = () => {
   const tariffs = [
     {
       name: "Basic",
-      price: "$119",
-      discountPrice: "$99",
+      price: "€119",
+      discountPrice: "€99",
       btn: "ОБРАТИ BASIC",
       features: [
         {
@@ -58,8 +58,8 @@ const PricingSection = () => {
     },
     {
       name: "Pro",
-      price: "$179",
-      discountPrice: "$154",
+      price: "€179",
+      discountPrice: "€154",
       btn: "ОБРАТИ PRO",
       features: [
         {
@@ -126,8 +126,8 @@ const PricingSection = () => {
     },
     {
       name: "VIP",
-      price: "$299",
-      discountPrice: "$269",
+      price: "€299",
+      discountPrice: "€269",
       btn: "ОБРАТИ VIP",
       features: [
         {
