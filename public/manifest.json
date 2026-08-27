@@ -1,0 +1,16 @@
+{
+  "name": "IT Job Marathon",
+  "short_name": "JobHack IT",
+  "description": "Марафон «Хакни пошук роботи в IT за 14 днів»",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}

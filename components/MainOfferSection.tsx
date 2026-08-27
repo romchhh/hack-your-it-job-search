@@ -8,7 +8,7 @@ import offerImg2 from "@/public/offers/sticker.png";
 import offerImg3 from "@/public/offers/sticker-1.png";
 // import checkImg2 from "@/public/check.png";
 import checkImg from "@/public/check.webp";
-import { Link as ScrollLink } from "react-scroll";
+import { ScrollLink } from "@/components/ScrollLink";
 import { HiOutlineCursorClick } from "react-icons/hi";
 
 const MainOfferSection = () => {
@@ -191,8 +191,6 @@ const MainOfferSection = () => {
               <div className="mx-auto flex w-full items-center justify-center">
                 <ScrollLink
                   to="questions"
-                  smooth={true}
-                  duration={500}
                   className="bg-gradient-to-br cursor-pointer from-[var(--main-color)] to-[var(--main-two-color)] text-white px-6 py-3 rounded-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 hover:translate-x-2 mx-auto"
                 >
                   <span>Доєднатись до марафону</span>

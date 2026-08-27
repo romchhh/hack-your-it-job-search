@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Link as ScrollLink } from "react-scroll";
+import { ScrollLink } from "@/components/ScrollLink";
 import { ArrowRight, Check } from "lucide-react";
 import { HiOutlineCursorClick } from "react-icons/hi";
 import Image from "next/image";
@@ -269,8 +269,6 @@ const PricingSection = () => {
               </ul>
               <ScrollLink
                 to="questions"
-                smooth={true}
-                duration={500}
                 className="w-full bg-gradient-to-br from-[var(--main-color)] to-[var(--main-two-color)] text-white px-4 py-2 rounded-lg font-semibold transition-colors flex items-center justify-center space-x-2 cursor-pointer"
               >
                 <span>{tariff.btn}</span>

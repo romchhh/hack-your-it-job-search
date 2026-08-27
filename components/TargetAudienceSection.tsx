@@ -10,7 +10,7 @@ import {
   CheckCircle,
   ArrowDown,
 } from "lucide-react";
-import { Link as ScrollLink } from "react-scroll";
+import { ScrollLink } from "@/components/ScrollLink";
 import { HiOutlineCursorClick } from "react-icons/hi";
 
 const TargetAudienceSection = () => {
@@ -164,8 +164,6 @@ const TargetAudienceSection = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <ScrollLink
                   to="questions"
-                  smooth={true}
-                  duration={500}
                   className="bg-gradient-to-br cursor-pointer from-[var(--main-color)] to-[var(--main-two-color)] text-white px-6 py-3 rounded-lg font-bold  transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 hover:translate-x-2 mx-auto"
                 >
                   <span>Забронювати місце</span>

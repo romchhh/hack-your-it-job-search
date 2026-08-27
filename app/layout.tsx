@@ -14,14 +14,8 @@ export const metadata: Metadata = {
   keywords:
     "пошук роботи IT, робота програмістом, IT вакансії України, марафон пошуку роботи, як знайти роботу в IT, резюме програміста, співбесіда IT, junior developer, middle developer, senior developer, remote робота IT, фріланс програмування, IT рекрутинг, курси IT, навчання програмування",
 
-  // Іконки
   icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/icon.png", type: "image/png", sizes: "32x32" },
-      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
-    ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180" }],
+    icon: [{ url: "/favicon.ico" }],
   },
 
   // Open Graph теги

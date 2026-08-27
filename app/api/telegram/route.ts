@@ -2,8 +2,12 @@ import { NextRequest } from "next/server";
 
 export async function POST(req: NextRequest) {
   try {
-    const botToken = process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
+    const botToken =
+      process.env.TELEGRAM_BOT_TOKEN ||
+      process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
+    const chatId =
+      process.env.TELEGRAM_CHAT_ID ||
+      process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
 
     if (!botToken || !chatId) {
       return new Response(

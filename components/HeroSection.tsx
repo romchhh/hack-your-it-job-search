@@ -7,7 +7,7 @@ import Image from "next/image";
 // import logo2 from "@/public/JS.png";
 import heroImgPng from "@/public/heroSection-Photoroom.png";
 import { HiOutlineCursorClick } from "react-icons/hi";
-import { Link as ScrollLink } from "react-scroll";
+import { ScrollLink } from "@/components/ScrollLink";
 
 const HeroSection = () => {
   return (
@@ -104,8 +104,6 @@ const HeroSection = () => {
 
               <ScrollLink
                 to="questions"
-                smooth={true}
-                duration={500}
                 className="bg-gradient-to-br cursor-pointer from-[var(--main-color)] to-[var(--main-two-color)] text-white px-8 py-4 rounded-lg font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 hover:translate-x-2 custom-text"
               >
                 <span>Доєднатись до 14-денного марафону</span>
@@ -168,8 +166,6 @@ const HeroSection = () => {
 
             <ScrollLink
               to="questions"
-              smooth={true}
-              duration={500}
               className="bg-gradient-to-br cursor-pointer from-[var(--main-color)] to-[var(--main-two-color)] text-white px-4 py-2 rounded-lg font-bold transition-all duration-300 shadow-lg hover:shadow-xl flex items-center space-x-2 hover:translate-x-2 custom-text"
             >
               <span>Доєднатись до 14-денного марафону</span>
