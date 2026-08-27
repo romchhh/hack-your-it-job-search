@@ -96,33 +96,25 @@ const QuestionsSection = () => {
     telegram: string;
     interest: string;
   }) => {
-    const botToken = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.NEXT_PUBLIC_TELEGRAM_CHAT_ID;
-    const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-
-    const message = `
-Нова заявка з форми:
-Ім'я: ${data.name}
-Телефон: ${data.phone}
-Telegram: ${data.telegram}
-Цікавість у марафоні по пошуку роботи: ${data.interest || "Не вказано"}
-    `.trim();
-
     try {
-      const response = await fetch(telegramApiUrl, {
+      const response = await fetch("/api/telegram", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          chat_id: chatId,
-          text: message,
+          name: data.name,
+          phone: data.phone,
+          telegram: data.telegram,
+          interest: data.interest,
         }),
       });
 
       if (!response.ok) {
-        throw new Error("Failed to send message to Telegram");
+        const errorData = await response.json();
+        throw new Error(errorData.message || `HTTP error: ${response.status}`);
       }
+
       return { success: true };
     } catch (error) {
       console.error("Error sending to Telegram:", error);
